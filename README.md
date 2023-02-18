@@ -1,4 +1,4 @@
-# JestVsVitest
+# Jest vs Vitest
 
 # Execution Time
 
