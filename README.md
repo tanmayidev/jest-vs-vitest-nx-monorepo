@@ -2,10 +2,17 @@
 
 # Execution Time
 
-- Number of test cases added : 37
+- Number of tests : 37
 - Each test case runs 1000 times
 
-## Webpack + Jest Application
+## Application 1:  webpack - jest 
+
+Command : 
+`nx generate @nrwl/react:application --directory=apps webpack-jest `
+
+App Name : webpack-jest          
+Bundler : Webpack (default)           
+Unit Test Runner : Jest (default)           
 
 | Trial      | Test Execution | Test Execution (--skip-nx-cache) | Watch Mode  |
 | :--------- | :------------: | :------------------------------: | :---------: |
@@ -14,8 +21,14 @@
 | 3          |     7.902s     |             8.245 s              |   8.415s    |
 | **Result** |   **7.902s**   |           **~7.998s**            | **~7.955s** |
 
-## Webpack + Vitest Application
+## Application 2 : webpack - vitest 
+Command:
+`nx generate @nrwl/react:application --directory=apps webpack-vitest --unitTestRunner=vitest`
 
+App Name : webpack-vitest    
+Bundler : Webpack (default)   
+Unit Test Runner : Vitest    
+ 
 | Trial      | Test Execution | Test Execution (--skip-nx-cache) | Watch Mode |
 | :--------- | :------------: | :------------------------------: | :--------: |
 | 1          |     1.83s      |              1.84s               |   1.79s    |
@@ -23,7 +36,13 @@
 | 3          |     1.83s      |              1.75s               |   1.79s    |
 | **Result** |   **1.83s**    |             **1.8s**             | **~1.79s** |
 
-## Vite + Vitest Application
+## Application 3 : vite - vitest 
+Command : 
+`nx generate @nrwl/react:application --bundler=vite --directory=apps vite-vitest --unitTestRunner=vitest`              
+
+App Name : vite-vitest           
+Bundler : Vite              
+Unit Test Runner : Vitest                
 
 | Trial      | Test Execution | Test Execution (--skip-nx-cache) | Watch Mode |
 | :--------- | :------------: | :------------------------------: | :--------: |
