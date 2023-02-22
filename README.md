@@ -45,7 +45,7 @@
 
 ## Running 37000 tests for each app in parallel
 
-![run-may 37k cases](./run-parallel-37k-cases.png)
+![run-may 37k cases](./test-results/run-parallel-37k-cases.png)
 
 ## References
 
